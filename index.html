@@ -61,16 +61,15 @@
   @media(max-width:860px){.cols3{grid-template-columns:1fr;gap:36px}}
 
   /* range */
-  .range{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:56px}
-  
-  .range figure{background:var(--white)}
-  .range .ph{aspect-ratio:1;overflow:hidden}
-  .range img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-  .range .item:hover img{transform:scale(1.04)}
-  .range figcaption{padding:14px 16px 18px;font-size:14px}
+  .range{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:64px}
+  .range figure{border-top:1px solid var(--ink)}
+  .range .ph{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:28px 8px 12px}
+  .range img{max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 18px 16px rgba(20,20,20,.16));transition:transform .5s}
+  .range figure:hover img{transform:translateY(-4px)}
+  .range figcaption{padding-top:12px;font-size:14px}
   .range figcaption b{display:block;font-weight:600}
   .range figcaption span{color:var(--muted)}
-  @media(max-width:860px){.range{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:720px){.range{grid-template-columns:1fr}}
 
   /* example */
   .example{background:var(--ink);color:var(--paper);border-top:0}
@@ -184,22 +183,12 @@
     <h2>Built on proven products.</h2>
     <p class="lead">In the first use case, each cocreation starts from La Cocotte Française's existing enamelled cast iron. The construction is proven. Only the details change.</p>
     <div class="range">
-      <div class="item">
-        <figure><div class="ph"><img loading="lazy" src="https://d2j6dbq0eux0bg.cloudfront.net/images/108454288/products/877727660/6405528212.jpg" alt="Sauteuse 26 cm, black"></div>
-        <figcaption><b>Sauteuse Ø26 cm</b><span>Noire</span></figcaption></figure>
-      </div>
-      <div class="item">
-        <figure><div class="ph"><img loading="lazy" src="https://d2j6dbq0eux0bg.cloudfront.net/images/108454288/products/749133058/5625795444.jpg" alt="Round cocotte 26 cm, ruby red"></div>
-        <figcaption><b>Cocotte ronde Ø26 cm</b><span>Rouge Rubis</span></figcaption></figure>
-      </div>
-      <div class="item">
-        <figure><div class="ph"><img loading="lazy" src="https://d2j6dbq0eux0bg.cloudfront.net/images/108454288/products/866366960/6273754251.jpg" alt="Oval cocotte 33 cm, cherry red"></div>
+      <figure><div class="ph"><img loading="lazy" src="cocotte-ronde-noire.png" alt="Round enamelled cast-iron cocotte, black"></div>
+        <figcaption><b>Cocotte ronde Ø26 cm</b><span>Noir</span></figcaption></figure>
+      <figure><div class="ph"><img loading="lazy" src="sauteuse-bleue.png" alt="Enamelled cast-iron sauteuse 26 cm, blue"></div>
+        <figcaption><b>Sauteuse Ø26 cm</b><span>Bleu</span></figcaption></figure>
+      <figure><div class="ph"><img loading="lazy" src="cocotte-ovale-rouge.png" alt="Oval enamelled cast-iron cocotte 33 cm, cherry red"></div>
         <figcaption><b>Cocotte ovale 33 cm</b><span>Rouge Cerise · 6,5 L</span></figcaption></figure>
-      </div>
-      <div class="item">
-        <figure><div class="ph"><img loading="lazy" src="https://d2j6dbq0eux0bg.cloudfront.net/images/108454288/products/702714208/5625795431.jpg" alt="Round cocotte 26 cm, snow white"></div>
-        <figcaption><b>Cocotte ronde Ø26 cm</b><span>Blanc Neige</span></figcaption></figure>
-      </div>
     </div>
   </div>
 </section>
