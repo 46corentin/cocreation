@@ -62,11 +62,11 @@
 
   /* range */
   .range{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:56px}
-  .range a{text-decoration:none}
+  
   .range figure{background:var(--white)}
   .range .ph{aspect-ratio:1;overflow:hidden}
   .range img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-  .range a:hover img{transform:scale(1.04)}
+  .range .item:hover img{transform:scale(1.04)}
   .range figcaption{padding:14px 16px 18px;font-size:14px}
   .range figcaption b{display:block;font-weight:600}
   .range figcaption span{color:var(--muted)}
@@ -111,6 +111,7 @@
   /* close */
   .close{text-align:left}
   .close h2{max-width:20ch}
+  .wip{display:inline-block;margin-top:36px;border:1px solid var(--ink);padding:14px 22px;font-size:14px;letter-spacing:.02em}
   footer{border-top:1px solid var(--line);padding:32px 0;font-size:13px;color:var(--muted)}
   footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 </style>
@@ -172,22 +173,22 @@
     <h2>Built on a proven range.</h2>
     <p class="lead">Every cocreation starts from La Cocotte Française's existing enamelled cast iron. The construction is proven. Only the details change.</p>
     <div class="range">
-      <a href="https://www.lacocottefrancaise.fr/boutique/Sauteuse-en-fonte-emaillee-diametre-26-cm-Noire-p877727660" target="_blank" rel="noopener">
+      <div class="item">
         <figure><div class="ph"><img loading="lazy" src="https://d2j6dbq0eux0bg.cloudfront.net/images/108454288/products/877727660/6405528212.jpg" alt="Sauteuse 26 cm, black"></div>
         <figcaption><b>Sauteuse Ø26 cm</b><span>Noire</span></figcaption></figure>
-      </a>
-      <a href="https://www.lacocottefrancaise.fr/boutique/Cocotte-ronde-en-fonte-emaillee-O26-cm-Rouge-Rubis-p749133058" target="_blank" rel="noopener">
+      </div>
+      <div class="item">
         <figure><div class="ph"><img loading="lazy" src="https://d2j6dbq0eux0bg.cloudfront.net/images/108454288/products/749133058/5625795444.jpg" alt="Round cocotte 26 cm, ruby red"></div>
         <figcaption><b>Cocotte ronde Ø26 cm</b><span>Rouge Rubis</span></figcaption></figure>
-      </a>
-      <a href="https://www.lacocottefrancaise.fr/boutique/Cocotte-ovale-en-fonte-emaillee-33-cm-6-5-litres-Rouge-Cerise-p866366960" target="_blank" rel="noopener">
+      </div>
+      <div class="item">
         <figure><div class="ph"><img loading="lazy" src="https://d2j6dbq0eux0bg.cloudfront.net/images/108454288/products/866366960/6273754251.jpg" alt="Oval cocotte 33 cm, cherry red"></div>
         <figcaption><b>Cocotte ovale 33 cm</b><span>Rouge Cerise · 6,5 L</span></figcaption></figure>
-      </a>
-      <a href="https://www.lacocottefrancaise.fr/boutique/Cocotte-ronde-en-fonte-emaillee-O26-cm-Blanc-Neige-p702714208" target="_blank" rel="noopener">
+      </div>
+      <div class="item">
         <figure><div class="ph"><img loading="lazy" src="https://d2j6dbq0eux0bg.cloudfront.net/images/108454288/products/702714208/5625795431.jpg" alt="Round cocotte 26 cm, snow white"></div>
         <figcaption><b>Cocotte ronde Ø26 cm</b><span>Blanc Neige</span></figcaption></figure>
-      </a>
+      </div>
     </div>
   </div>
 </section>
@@ -253,14 +254,14 @@
     <p class="eyebrow">Start</p>
     <h2>Bring the idea. We bring the iron.</h2>
     <p class="lead">300 pieces. Six colours. Two months. One name on the lid: yours.</p>
-    <a class="cta" href="https://www.lacocottefrancaise.fr" target="_blank" rel="noopener">Contact La Cocotte Française</a>
+    <p class="wip">Work in progress. Contact details to follow.</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     <span>Cocreation is a working title. A proposal by La Cocotte Française.</span>
-    <span>Product photography © <a href="https://www.lacocottefrancaise.fr" target="_blank" rel="noopener">lacocottefrancaise.fr</a></span>
+    <span>Work in progress · Product photography © La Cocotte Française</span>
   </div>
 </footer>
 
