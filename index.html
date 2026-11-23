@@ -100,13 +100,17 @@
   @media(max-width:720px){.steps li{grid-template-columns:48px 1fr}.steps .when{grid-column:2;text-align:left}}
 
   .timeline{margin-top:56px}
-  .tl-row{display:grid;grid-template-columns:140px 1fr;align-items:center;gap:16px;margin-bottom:10px;font-size:13px}
-  .tl-track{position:relative;height:28px;background:repeating-linear-gradient(90deg,transparent 0 calc(12.5% - 1px),var(--line) calc(12.5% - 1px) 12.5%)}
-  .tl-bar{position:absolute;top:4px;bottom:4px;background:var(--ink)}
+  .tl-row,.tl-weeks{display:grid;grid-template-columns:156px 2fr 5fr;align-items:center;margin-bottom:10px;font-size:13px}
+  .tl-pre,.tl-prod{position:relative;height:28px}
+  .tl-pre{border-right:2px solid var(--accent)}
+  .tl-prod{background:repeating-linear-gradient(90deg,transparent 0 calc(12.5% - 1px),var(--line) calc(12.5% - 1px) 12.5%)}
+  .tl-bar{position:absolute;top:4px;bottom:4px;left:0;right:0;background:var(--ink)}
   .tl-bar.pre{background:var(--accent)}
-  .tl-weeks{display:grid;grid-template-columns:156px repeat(8,1fr);gap:0;font-size:11px;color:var(--muted);margin-top:6px}
-  .tl-weeks span:first-child{grid-column:1}
-  @media(max-width:720px){.tl-row,.tl-weeks{grid-template-columns:90px 1fr}.tl-weeks{display:none}}
+  .tl-bar.vary{right:8px;background:repeating-linear-gradient(135deg,var(--ink) 0 6px,transparent 6px 12px);opacity:.35}
+  .tl-weeks{font-size:11px;color:var(--muted);margin-top:6px}
+  .tl-weeks .wk{display:grid;grid-template-columns:repeat(8,1fr)}
+  .tl-weeks .vary-l{font-style:italic}
+  @media(max-width:720px){.tl-row,.tl-weeks{grid-template-columns:90px 1fr 2fr}.tl-weeks .wk span:nth-child(even){visibility:hidden}}
 
   /* close */
   .close{text-align:left}
@@ -147,7 +151,7 @@
     <div class="facts">
       <div class="fact"><b>300</b><span>units per design: the run size that sells at market price with a profit.</span></div>
       <div class="fact"><b>50</b><span>units per colour batch. Up to six colours in one run.</span></div>
-      <div class="fact"><b>2</b><span>months from idea to delivery, with preorders open throughout.</span></div>
+      <div class="fact"><b>2</b><span>months from final design to delivery, with preorders open throughout.</span></div>
     </div>
   </div>
 </header>
@@ -228,22 +232,22 @@
 <section id="process">
   <div class="wrap">
     <p class="eyebrow">The process</p>
-    <h2>Two months, start to finish.</h2>
-    <p class="lead">Four stages, one fixed calendar. Preorders open on day one, so the run can be partly sold before the first piece is cast.</p>
+    <h2>Open until the design is chosen. Two months after.</h2>
+    <p class="lead">The road to a final design takes as long as it needs. Once the design is chosen, the calendar is fixed: two months of mould and production, with preorders open for the whole period.</p>
     <ol class="steps">
-      <li><div><h3>Suggestion</h3><p>The chef submits the idea: the base model, the changes, the intended use, the colours.</p></div><span class="when">Weeks 1–2</span></li>
-      <li><div><h3>Discussion &amp; testing</h3><p>The cocreation parties check that the design can be cast and is safe to use. The chef tests prototypes and samples in their own kitchen.</p></div><span class="when">Weeks 2–3</span></li>
-      <li><div><h3>Design chosen</h3><p>Final dimensions, details, branding and the colour split across six batches are signed off.</p></div><span class="when">Week 4</span></li>
-      <li><div><h3>Mould &amp; production</h3><p>The mould is produced and 300 units are cast. Enamel is applied in six batches of 50 in the chosen colours, then the pieces are finished, inspected and delivered.</p></div><span class="when">Weeks 5–8</span></li>
+      <li><div><h3>Suggestion</h3><p>The chef submits the idea: the base model, the changes, the intended use, the colours.</p></div><span class="when">Duration varies</span></li>
+      <li><div><h3>Discussion &amp; testing</h3><p>The cocreation parties check that the design can be cast and is safe to use. The chef tests prototypes and samples in their own kitchen.</p></div><span class="when">Duration varies</span></li>
+      <li><div><h3>Design chosen</h3><p>Final dimensions, details, branding and the colour split across six batches are signed off.</p></div><span class="when">Sign-off</span></li>
+      <li><div><h3>Mould &amp; production</h3><p>The mould is produced and 300 units are cast. Enamel is applied in six batches of 50 in the chosen colours, then the pieces are finished, inspected and delivered. Preorders can be placed throughout.</p></div><span class="when">2 months</span></li>
     </ol>
 
     <div class="timeline" aria-hidden="true">
-      <div class="tl-row"><span>Suggestion</span><div class="tl-track"><div class="tl-bar" style="left:0;width:25%"></div></div></div>
-      <div class="tl-row"><span>Discussion &amp; test</span><div class="tl-track"><div class="tl-bar" style="left:12.5%;width:25%"></div></div></div>
-      <div class="tl-row"><span>Design chosen</span><div class="tl-track"><div class="tl-bar" style="left:37.5%;width:12.5%"></div></div></div>
-      <div class="tl-row"><span>Mould &amp; production</span><div class="tl-track"><div class="tl-bar" style="left:50%;width:50%"></div></div></div>
-      <div class="tl-row"><span style="color:var(--accent);font-weight:600">Preorders open</span><div class="tl-track"><div class="tl-bar pre" style="left:0;width:100%"></div></div></div>
-      <div class="tl-weeks"><span></span><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span><span>W7</span><span>W8</span></div>
+      <div class="tl-row"><span>Suggestion</span><div class="tl-pre"><div class="tl-bar vary"></div></div><div class="tl-prod"></div></div>
+      <div class="tl-row"><span>Discussion &amp; test</span><div class="tl-pre"><div class="tl-bar vary"></div></div><div class="tl-prod"></div></div>
+      <div class="tl-row"><span style="font-weight:600">Design chosen</span><div class="tl-pre"></div><div class="tl-prod"></div></div>
+      <div class="tl-row"><span>Mould &amp; production</span><div class="tl-pre"></div><div class="tl-prod"><div class="tl-bar"></div></div></div>
+      <div class="tl-row"><span style="color:var(--accent);font-weight:600">Preorders open</span><div class="tl-pre"></div><div class="tl-prod"><div class="tl-bar pre"></div></div></div>
+      <div class="tl-weeks"><span></span><span class="vary-l">Duration varies</span><div class="wk"><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span><span>W7</span><span>W8</span></div></div>
     </div>
   </div>
 </section>
@@ -253,7 +257,7 @@
   <div class="wrap">
     <p class="eyebrow">Start</p>
     <h2>Bring the idea. The process does the rest.</h2>
-    <p class="lead">300 pieces. Six colours. Two months. One name on the lid: the chef's.</p>
+    <p class="lead">300 pieces. Six colours. Two months of production. One name on the lid: the chef's.</p>
     <p class="wip">Work in progress. Contact details to follow.</p>
   </div>
 </section>
