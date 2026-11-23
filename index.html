@@ -41,11 +41,11 @@
 
   /* hero */
   .hero{border-top:0;padding:88px 0 0}
-  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:end}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
   .hero h1{margin-bottom:28px}
   .hero h1 em{font-style:italic;color:var(--accent)}
-  .hero-img{background:var(--white);aspect-ratio:4/5;overflow:hidden}
-  .hero-img img{width:100%;height:100%;object-fit:cover}
+  .hero-img{display:flex;align-items:center;justify-content:center;padding:24px 0}
+  .hero-img img{width:100%;height:auto;filter:drop-shadow(0 28px 24px rgba(20,20,20,.18))}
   .cta{display:inline-block;margin-top:36px;background:var(--ink);color:var(--white);text-decoration:none;padding:16px 28px;font-weight:500;font-size:15px;letter-spacing:.02em}
   .cta:hover{background:var(--accent)}
   .facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:88px;border-top:1px solid var(--ink)}
@@ -152,7 +152,7 @@
         <a class="cta" href="#process">How it works</a>
       </div>
       <div class="hero-img">
-        <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/108454288/products/866374688/6273733682.jpg" alt="Enamelled cast-iron sauteuse, 26 cm, blue — La Cocotte Française">
+        <img src="sauteuse-bleue.png" alt="Enamelled cast-iron sauteuse, 26 cm, blue — La Cocotte Française">
       </div>
     </div>
     <div class="facts">
