@@ -88,6 +88,13 @@
   .batch{height:64px;display:flex;align-items:flex-end;padding:8px;font-size:11px;letter-spacing:.04em}
   .b-sage{background:#7d8b72;color:#fff}.b-black{background:#222;color:#bbb;outline:1px solid #444}.b-white{background:#efece5;color:#555}
   .legend{font-size:13px;color:#9a978f}
+  .b-red{background:#a3222a;color:#fff}.b-blue{background:#27466e;color:#fff}
+  .ex + .ex{margin-top:96px;padding-top:72px;border-top:1px solid #333}
+  .ex-head{display:flex;gap:20px;align-items:baseline;margin-top:56px}
+  .ex-head .n{font-family:var(--serif);color:#e07a6f;font-size:18px}
+  .ex-head h3{font-family:var(--serif);font-weight:400;font-size:clamp(26px,3vw,36px)}
+  .ex p.lead{margin-top:16px}
+  .ex-img svg{width:100%;height:100%;display:block}
   @media(max-width:860px){.ex-grid{grid-template-columns:1fr;gap:40px}}
 
   /* process */
@@ -128,7 +135,7 @@
     <ul>
       <li><a href="#model">Model</a></li>
       <li><a href="#range">Range</a></li>
-      <li><a href="#example">Example</a></li>
+      <li><a href="#example">Examples</a></li>
       <li><a href="#process">Process</a></li>
     </ul>
   </div>
@@ -200,8 +207,12 @@
 <!-- EXAMPLE -->
 <section id="example" class="example">
   <div class="wrap">
-    <p class="eyebrow">Example cocreation</p>
-    <h2>The chef's sauteuse.</h2>
+    <p class="eyebrow">Example cocreations</p>
+    <h2>Two chefs. Two products.</h2>
+    <p class="lead">Each starts from a proven piece and changes only what the chef's cooking demands.</p>
+
+    <article class="ex">
+    <div class="ex-head"><span class="n">A.</span><h3>The chef's sauteuse</h3></div>
     <p class="lead">A chef cooks risotto and braises for two in a 26 cm sauteuse and finds it a little too small and a little too shallow. The cocreation version fixes both and carries the restaurant's name.</p>
     <div class="ex-grid">
       <div class="ex-img">
@@ -225,6 +236,64 @@
         <p class="legend">150 Vert Sauge (the house colour) · 100 Noir · 50 Blanc Neige</p>
       </div>
     </div>
+    </article>
+
+    <article class="ex">
+    <div class="ex-head"><span class="n">B.</span><h3>The chef's terrine</h3></div>
+    <p class="lead">A charcuterie-focused chef wants a cast-iron terrine for pâté de campagne and foie gras: rectangular for clean, even slices, with traditional handles that are easy to grip when it comes out of a bain-marie.</p>
+    <div class="ex-grid">
+      <div class="ex-img">
+        <svg viewBox="0 0 600 600" role="img" aria-label="Concept sketch: rectangular terrine with traditional end handles, plan and side view">
+          <rect width="600" height="600" fill="#fff"/>
+          <g fill="none" stroke="#141414" stroke-width="2.5" stroke-linejoin="round">
+            <!-- plan view -->
+            <rect x="110" y="90" width="380" height="140" rx="10"/>
+            <rect x="124" y="104" width="352" height="112" rx="6" stroke-width="1.2"/>
+            <path d="M110 128 H62 a6 6 0 0 0 -6 6 V186 a6 6 0 0 0 6 6 H110"/>
+            <rect x="72" y="142" width="26" height="36" rx="3" stroke-width="1.5"/>
+            <path d="M490 128 H538 a6 6 0 0 1 6 6 V186 a6 6 0 0 1 -6 6 H490"/>
+            <rect x="502" y="142" width="26" height="36" rx="3" stroke-width="1.5"/>
+            <circle cx="300" cy="160" r="5" stroke-width="1.5"/>
+            <!-- side view -->
+            <rect x="104" y="336" width="392" height="14" rx="3"/>
+            <path d="M112 350 V450 a8 8 0 0 0 8 8 H480 a8 8 0 0 0 8 -8 V350"/>
+            <path d="M112 362 H62 a6 6 0 0 0 -6 6 V384 a6 6 0 0 0 6 6 H112"/>
+            <path d="M488 362 H538 a6 6 0 0 1 6 6 V384 a6 6 0 0 1 -6 6 H488"/>
+          </g>
+          <g stroke="#9b1b1f" stroke-width="1.2" fill="#9b1b1f" font-family="Inter,system-ui,sans-serif" font-size="15">
+            <line x1="110" y1="262" x2="490" y2="262"/><line x1="110" y1="254" x2="110" y2="270"/><line x1="490" y1="254" x2="490" y2="270"/>
+            <text x="300" y="286" text-anchor="middle" stroke="none">30 cm</text>
+            <line x1="574" y1="90" x2="574" y2="230"/><line x1="566" y1="90" x2="582" y2="90"/><line x1="566" y1="230" x2="582" y2="230"/>
+            <text x="574" y="76" text-anchor="middle" stroke="none">11 cm</text>
+            <line x1="574" y1="336" x2="574" y2="458"/><line x1="566" y1="336" x2="582" y2="336"/><line x1="566" y1="458" x2="582" y2="458"/>
+            <text x="574" y="482" text-anchor="middle" stroke="none">9 cm</text>
+          </g>
+          <g fill="#6b6b66" font-family="Inter,system-ui,sans-serif" font-size="13" letter-spacing="1.5">
+            <text x="110" y="62">PLAN</text><text x="110" y="320">SIDE</text>
+          </g>
+        </svg>
+        <div class="ex-tag">Concept sketch · new mould</div>
+      </div>
+      <div>
+        <table class="spec">
+          <tr><td>Starting point</td><td>Cocotte ovale 33 cm: same enamelled cast iron, new mould</td></tr>
+          <tr><td>Shape</td><td><s>Oval</s> → rectangular, 30 × 11 × 9 cm, about 2&nbsp;L</td></tr>
+          <tr><td>Handles</td><td>Traditional cast end handles, open rectangular loops</td></tr>
+          <tr><td>Lid</td><td>Flat, with steam vent. Turned over, it fits inside to press the terrine</td></tr>
+          <tr><td>Interior</td><td>Matt black enamel for a clean release</td></tr>
+          <tr><td>Branding</td><td>Chef's mark cast into the lid</td></tr>
+          <tr><td>Run</td><td>300 units · 6 colour batches of 50</td></tr>
+        </table>
+        <div class="batches" aria-label="Colour allocation: 100 cherry red, 100 black, 50 blue, 50 white">
+          <div class="batch b-red">50</div><div class="batch b-red">50</div>
+          <div class="batch b-black">50</div><div class="batch b-black">50</div>
+          <div class="batch b-blue">50</div>
+          <div class="batch b-white">50</div>
+        </div>
+        <p class="legend">100 Rouge Cerise · 100 Noir · 50 Bleu · 50 Blanc Neige</p>
+      </div>
+    </div>
+    </article>
   </div>
 </section>
 
